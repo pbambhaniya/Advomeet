@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.multipz.atmiyalawlab">
+
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.multipz.atmiyalawlab.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.multipz.atmiyalawlab.permission.C2D_MESSAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:name=".Util.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!--   <meta-data
+               android:name="com.google.firebase.messaging.default_notification_icon"
+               android:resource="@mipmap/ic_launcher" />
+           <meta-data
+               android:name="com.google.firebase.messaging.default_notification_color"
+               android:resource="@android:color/" />
+           <meta-data
+               android:name="com.google.android.gms.version"
+               android:value="@integer/google_play_services_version" />-->
+
+
+        <meta-data
+            android:name="com.razorpay.ApiKey"
+            android:value="rzp_test_uw9cWyOAaTb9Jl" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".Activity.MainActivity" />
+        <activity
+            android:name=".Activity.ActivitySplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Transparent">
+
+        </activity>
+        <activity
+            android:name=".Activity.ActivitySelectUser"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityLoginScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityVerifyMobileNo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityVerifyOTP"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PersonalInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityRegQualification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityContactInformation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ActivityDashboard"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".Activity.ActivityAddTaskDairy" />
+        <activity android:name=".Activity.ActivityAdvocateDiaryDetail" />
+        <activity android:name=".Activity.ActivityDictionary" />
+        <activity android:name=".Activity.DictionaryDetail" />
+        <activity android:name=".Activity.JudgementActivity" />
+        <activity android:name=".Activity.ActivityNews" />
+        <activity android:name=".Activity.Activity_News_Detail" />
+        <activity
+            android:name=".User.ActivityDashboardUser"
+            android:label="Dashboard"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".User.ActivityGiveFeedback" />
+        <activity android:name=".User.ActivityLawyerDetail" />
+        <activity android:name=".User.ActivityBookmarkList" />
+        <activity android:name=".User.ActivityPostYourCase" />
+        <activity android:name=".User.ActivityCaseList" />
+        <activity android:name=".Activity.ActivityNewsDetail" />
+        <activity android:name=".Activity.ActivitySubscriptionPlan">
+            <!--  <intent-filter>
+                  <action android:name="android.intent.action.MAIN" />
+
+                  <category android:name="android.intent.category.LAUNCHER" />
+              </intent-filter>
+    -->      </activity>
+
+        <activity android:name=".Activity.ActivityDrafiting" />
+        <activity android:name=".Activity.ActivityDraftingDetail" />
+        <activity
+            android:name=".Activity.ActivityQualification"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".Activity.ActivityChatWithUser"
+            android:windowSoftInputMode="stateVisible|adjustResize|stateHidden" />
+        <activity
+            android:name=".Activity.ActivityChatting"
+            android:windowSoftInputMode="stateVisible|adjustResize|stateHidden" />
+        <activity android:name=".Activity.ActivityLawyerProfile" />
+        <activity android:name=".Activity.ActivityChangePassword" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.multipz.atmiyalawlab"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepath" />
+        </provider>
+
+        <activity android:name=".Activity.LawyerProfileActivity" />
+        <activity android:name=".User.ActivityAskLegal" />
+        <activity android:name=".Activity.ActivityLawyerSetting" />
+        <activity android:name=".Activity.SelectAvailabilityActivity" />
+        <activity android:name=".Activity.ActivityLawyerLanguage" />
+        <activity android:name=".Activity.ActivityLawyerCourt" />
+        <activity android:name=".Activity.ActivityPracticeArea" />
+        <activity android:name=".User.ActivityAskLegalAdvise" />
+        <activity android:name=".Activity.ActivityCasesList" />
+        <activity android:name=".Activity.ActivityAssignCase" />
+        <activity android:name=".User.ActivitySearchLawyer" />
+        <activity android:name=".User.ActivitySearch" />
+        <activity android:name=".User.ActivityBookMark" />
+        <activity android:name=".User.ActivityChangeContactNo" />
+        <activity android:name=".User.ActivityUserSetting" />
+        <activity android:name=".Activity.ActivityNotification" />
+        <activity android:name=".Activity.ActivityPolicy" />
+        <activity android:name=".Activity.ActivityPolicyAndTermCondition" />
+        <activity android:name=".User.ActivityPostedCaseList" />
+        <activity android:name=".User.ActivityAcceptCaseLaywerList" />
+        <activity android:name=".User.ActivityBookAppointment" />
+        <activity android:name=".Activity.ActivityLawyerBookAppointment" />
+        <activity android:name=".Activity.ActivityMyAppointmentList" />
+        <activity android:name=".Activity.ActivityMyAppointmentListlawyerSide" />
+        <activity android:name=".Activity.JudjmentListActivity" />
+        <activity android:name=".Activity.JudgementDetailActivity" />
+        <activity android:name=".Activity.ChattingImageActivity" />
+        <activity android:name=".Activity.ActivityAudioCalling" />
+        <activity android:name=".Activity.ActivityAvailabeTimeSlot" />
+        <activity android:name=".VideoCalling.BaseActivity" />
+        <activity android:name=".VideoCalling.IncommingActivity" />
+        <activity android:name=".VideoCalling.CallScreenActivity" />
+        <activity android:name=".VideoCalling.LoginUserActivity"></activity>
+        <activity android:name=".VideoCalling.RecieoentUserActivity" />
+        <activity android:name=".User.ActivityMakePayment" />
+
+        <service android:name=".VideoCalling.SinchService" />
+
+        <activity android:name=".User.ActivityAskQuestionView" />
+        <activity android:name=".Activity.ActivitySinchAudioCalling">
+
+
+        </activity>
+        <activity android:name=".Activity.ActivityContactMedium" />
+        <activity android:name=".User.ActivityCallList" />
+        <activity android:name=".User.ActivityCallProfile" />
+
+        <service
+            android:name=".Util.MyFirebaseMessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+        <service android:name=".Util.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!--   <service android:name=".Util.MyFirebaseInstanceIDService">
+               <intent-filter>
+                   <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+               </intent-filter>
+           </service>
+           <service android:name=".Util.MyFirebaseMessagingService">
+               <intent-filter>
+                   <action android:name="com.google.firebase.MESSAGING_EVENT" />
+               </intent-filter>
+           </service>-->
+
+        <activity android:name=".DemoActivity" />
+        <activity android:name=".Activity.ActivityIntroductionScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

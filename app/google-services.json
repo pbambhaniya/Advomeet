@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "643670938829",
+    "firebase_url": "https://atmiya-law-lab.firebaseio.com",
+    "project_id": "atmiya-law-lab",
+    "storage_bucket": "atmiya-law-lab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:643670938829:android:f91122c539ba5cda",
+        "android_client_info": {
+          "package_name": "com.multipz.atmiyalawlab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "643670938829-vcdjlltrero73ipja9j6iisk9nqu8j0u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAISKLC0dw_neBkObESIR1gqawDzCCtvao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

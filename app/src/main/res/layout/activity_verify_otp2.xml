@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.multipz.atmiyalawlab.Activity.ActivityVerifyOTP">
+
+
+    <RelativeLayout
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerInParent="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/otp_bg" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/verify_otp_text"
+                android:textColor="#C9CCCF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_mobile_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="+91 88******25"
+                android:textColor="@color/atimiya_law_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Enter 4 digit number"
+                android:textColor="@color/atimiya_law_color"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/rel_enter_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/lnr_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_1"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textColor="@color/atimiya_law_color" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/atimiya_law_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnr_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/lnr_1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_2"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+
+                        android:singleLine="true"
+                        android:textColor="@color/atimiya_law_color" />
+
+                    <View
+                        android:layout_width="40dp"
+                        android:layout_height="1dp"
+                        android:background="@color/atimiya_law_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnr_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/lnr_2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_3"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+
+                        android:singleLine="true"
+                        android:textColor="@color/atimiya_law_color" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:background="@color/atimiya_law_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lnr_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toRightOf="@id/lnr_3"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/edt_4"
+                        android:layout_width="40dp"
+                        android:layout_height="45dp"
+                        android:background="@android:color/transparent"
+
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="1"
+                        android:singleLine="true"
+                        android:textColor="@color/atimiya_law_color" />
+
+                    <View
+                        android:layout_width="50dp"
+                        android:layout_height="1dp"
+                        android:background="@color/atimiya_law_color" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rel_txt_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/txt_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Didn't get the code?"
+                    android:textColor="#C9CCCF"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/btn_resend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/txt_get_code"
+                    android:gravity="center"
+                    android:text="RESEND"
+                    android:textAllCaps="true"
+                    android:textColor="@color/atimiya_law_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btn_verify_otp"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/rel_txt_code"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/btn_app"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Verify"
+                    android:textColor="@color/atimiya_law_color"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader" />
+</RelativeLayout>

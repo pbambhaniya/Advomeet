@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.multipz.atmiyalawlab.Activity.ActivityVerifyMobileNo">
+
+    <RelativeLayout
+        android:id="@+id/rel_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lnr_main_verify_otp"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:background="@color/atimiya_law_color"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="VERIFY MOBILE"
+                android:textColor="@color/colorPrimary"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/verify_otp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/ic_verify_image" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lnr_mobile_no"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/rel_main"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_editext_border"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <!--<ImageView-->
+        <!--android:id="@+id/imguser_password"-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="20dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="20dp"-->
+        <!--android:src="@mipmap/ic_mobile_white" />-->
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/imguser_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            app:ccp_contentColor="@color/edttext_color_placeholder"
+            app:ccp_defaultNameCode="IN"
+            app:ccp_textSize="16sp" />
+
+
+        <EditText
+            android:id="@+id/edt_verify_mobile_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgright_password"
+            android:layout_toRightOf="@+id/imguser_password"
+            android:background="@android:color/transparent"
+            android:hint="Enter Mobile Number"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textColor="@color/edttext_color_placeholder"
+            android:textColorHint="@color/edttext_color_placeholder"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_submit"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/lnr_mobile_no"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_app"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Submit"
+            android:textColor="@color/atimiya_law_color"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader" />
+
+
+</RelativeLayout>

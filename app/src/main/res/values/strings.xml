@@ -1,0 +1,118 @@
+<resources>
+    <string name="app_name">AdvoMeet</string>
+    <string name="application_name">AdvoMeet</string>
+
+    <string name="verify_otp">Please enter your mobile number</string>
+    <string name="verify_otp_text">Please Wait We Verify Your number</string>
+    <string name="help">Help &amp; FAQ</string>
+    <string name="application_package">App Info</string>
+
+    <string name="userdash_ask">Ask Legal Advise</string>
+    <string name="post_your_case">Post Your Case</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="my_account">My Account</string>
+    <string name="feedback">My Review</string>
+    <string name="state">State</string>
+    <string name="addappoinment">Appointment booked successfully \n please wait for lawyer response</string>
+    <string name="nocaselist">Your case has not been \n accepted any lawyer yet.</string>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="barcouncil">
+        <item>Bar Council</item>
+        <item>Gujarat</item>
+        <item>Maharashtra</item>
+    </string-array>
+
+    <string-array name="proof">
+        <item>Select Proof</item>
+        <item>Id Proof</item>
+        <item>Registration Proof</item>
+        <item>Qualification Proof</item>
+    </string-array>
+
+    <string-array name="graduate">
+        <item>Graduation</item>
+        <item>Graduate</item>
+        <item>Post Graduate</item>
+    </string-array>
+
+    <string-array name="degree">
+        <item>Degree</item>
+        <item>B.Com</item>
+        <item>M.com</item>
+        <item>L.L.B</item>
+    </string-array>
+
+    <string-array name="state">
+        <item>State</item>
+        <item>Gujarat</item>
+        <item>Maharashtra</item>
+    </string-array>
+    <string-array name="city">
+        <item>City</item>
+        <item>Ahmadabad</item>
+        <item>Baroda</item>
+        <item>Gujarat</item>
+    </string-array>
+    <string-array name="year_of_exp">
+        <item>Year of Exp</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>Month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string name="title_activity_dashboard">ActivityDashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="case_accept_popup">Sure you want to accept this case?</string>
+    <string name="case_decline_popup">Sure you want to decline this case?</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_dashboard_user">ActivityDashboardUser</string>
+    <string name="book_appoinment">Book \n Appoinment</string>
+
+</resources>

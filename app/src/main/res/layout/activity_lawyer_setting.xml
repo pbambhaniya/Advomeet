@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_back_white" />
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45dp"
+                android:text="Setting"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/img_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="12dp"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/btn_bag"
+                    android:layout_width="25dp"
+                    android:layout_height="26dp"
+                    android:src="@mipmap/ic_nbotification" />
+
+                <TextView
+                    android:id="@+id/item_count"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/small_circle"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/colorTextHint"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/img_setting"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/img_notification"
+                android:padding="2dp"
+                android:src="@mipmap/ic_setting"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lnr_availabilty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_availability"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Availability"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view1"
+                    style="@style/cus_deviders_setting" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_Courts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txt_Courts"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Courts"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view2"
+                    style="@style/cus_deviders_setting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_Practice_Area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_Practice_Area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Practices Area"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view3"
+                    style="@style/cus_deviders_setting" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_language"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_language"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Language"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view4"
+                    style="@style/cus_deviders_setting" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_change_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_change_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Change Password"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view6"
+                    style="@style/cus_deviders_setting" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_change_con_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_change_con_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Change Contact Number"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/view8"
+                    style="@style/cus_deviders_setting" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_contact_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/txt_contact_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Contact Medium"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+
+                <View
+                    android:id="@+id/cus_deviders_setting"
+                    style="@style/cus_deviders_setting" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader" />
+</RelativeLayout>

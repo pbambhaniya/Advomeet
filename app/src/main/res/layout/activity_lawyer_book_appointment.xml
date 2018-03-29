@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgPage"
+    tools:context="com.multipz.atmiyalawlab.Activity.ActivityLawyerBookAppointment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_back_white" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="Book Appointment"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="@dimen/margin_left"
+            android:focusable="false"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edt_select_date"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/bg_btn_book_appoinment"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="true"
+                android:focusableInTouchMode="false"
+                android:hint="Select Date"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/edttext_color_placeholder"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_right"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1">
+
+                    <EditText
+                        android:id="@+id/edtStartTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_btn_book_appoinment"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:hint="Start Time"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/edttext_color_placeholder"
+                        android:textSize="16sp" />
+
+
+                    <EditText
+                        android:id="@+id/edtEndTime"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0.5"
+                        android:background="@drawable/bg_btn_book_appoinment"
+                        android:clickable="true"
+                        android:editable="false"
+                        android:focusable="true"
+                        android:focusableInTouchMode="false"
+                        android:hint="End Time"
+                        android:textColor="@color/colorPrimary"
+                        android:textColorHint="@color/edttext_color_placeholder"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtaboutagenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_right"
+                android:background="@drawable/bg_btn_book_appoinment"
+                android:hint="Agenda About Appointment"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/edttext_color_placeholder"
+                android:textSize="16sp" />
+
+
+            <EditText
+                android:id="@+id/edt_describe_description"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_margin="@dimen/margin_right"
+                android:background="@drawable/bg_btn_book_appoinment"
+                android:gravity="start"
+                android:hint="Describe in Brief About Appointment"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/edttext_color_placeholder"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rel_book_now"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/rel_book_now"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Book Now"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/loader"
+        layout="@layout/loader" />
+</RelativeLayout>

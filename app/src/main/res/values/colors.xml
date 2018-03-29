@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303F52</color>
+    <color name="colorPrimaryDark">#303F52</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="colorBgPage">#EFEFEF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorgray">#c8ffffff</color>
+    <color name="colorBlack">#000</color>
+    <color name="yellow">#F1E15A</color>
+
+    <color name="Blue">#fa357fff</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorTextHint">#3defefef</color>
+
+    <color name="gray">#1e303f52</color>
+    <color name="bg_blue">#185a9d</color>
+    <color name="colorPrimaryAddDetailView">#29303f52</color>
+    <color name="availabilty_today">#25AF1B</color>
+    <color name="not_availabilty_today">#af1b25</color>
+    <color name="delete">#FF1D1D</color>
+    <color name="viewborder">#95989A</color>
+    <color name="bg_edit_text_color">#566271</color>
+    <color name="edttext_color_placeholder">#B2B6BC</color>
+    <color name="atimiya_law_color">#EFEFEF</color>
+    <color name="line_color">#A3A9B0</color>
+    <color name="qualification_top_color">#95690c</color>
+
+    <color name="color_paid">#289F05</color>
+    <color name="color_cancel">#D40A25</color>
+    <color name="color_detail">#303F52</color>
+    <color name="sinch_bg">#6A377C</color>
+    <color name="chat_bg">#ece5dd</color>
+
+
+    <color name="dot_dark_screen1">#3b3b3b</color>
+    <color name="dot_dark_screen2">#3b3b3b</color>
+    <color name="dot_dark_screen3">#3b3b3b</color>
+    <color name="dot_dark_screen4">#3b3b3b</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#ffffff</color>
+    <color name="dot_light_screen2">#ffffff</color>
+    <color name="dot_light_screen3">#ffffff</color>
+    <color name="dot_light_screen4">#ffffff</color>
+
+
+    <!--<color name="dot_light_screen1">#8f8f8f</color>
+    <color name="dot_light_screen2">#8f8f8f</color>
+    <color name="dot_light_screen3">#8f8f8f</color>
+    <color name="dot_light_screen4">#8f8f8f</color>-->
+
+</resources>
